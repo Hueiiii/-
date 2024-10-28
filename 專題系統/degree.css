@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: rgba(76, 175, 80, 0.9); /* 導覽列添加一點透明度 */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 30px; /* 增加上下內邊距和左右內邊距，使導航列變高 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* 確保內容不會換行 */
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    color: #ddd;
+    margin: 0;
+    font-size: 1.5em; /* 調整標題字體大小，使其更大 */
+    white-space: nowrap; /* 防止換行 */
+}
+
+.navbar nav a {
+    color: white;
+    text-align: center;
+    padding: 10px 15px; /* 增加導航連結的內邊距，使按鈕更大 */
+    text-decoration: none;
+    font-size: 1.1em; /* 調整導航連結字體大小 */
+    white-space: nowrap; /* 防止導航項目換行 */
+}
+
+.navbar nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 15px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* 調整圖表間距 */
+}
+
+.chart-container {
+    width: 450px; /* 調整寬度 */
+    height: 350px; /* 調整高度 */
+}

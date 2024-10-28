@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgba(76, 175, 80, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar h1 {
+    color: #ddd;
+    margin: 0;
+    font-size: 1.5em;
+    white-space: nowrap;
+}
+
+.navbar nav a {
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.navbar nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-content {
+    padding-top: 120px;
+}
+
+.content {
+    padding: 15px;
+    background-color: white;
+    margin: 0 auto;
+    width: 80%; 
+    max-width: 1200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#chartContainer {
+    width: 100%; 
+    height: 60vh; /* 設置高度為視窗高度的 60% */
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+canvas#myChart {
+    width: 100% !important;
+    height: 100% !important;
+}
